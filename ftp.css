@@ -74,7 +74,7 @@ body {
 	
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: url("https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	background-image: url("./asset/paint.jpg");
   }
 /* nav menu */
 
@@ -111,7 +111,7 @@ nav ul li a:hover {
 /*Galerie*/
 .p{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
   padding-left: 2rem;
 }
@@ -165,12 +165,64 @@ div#slider {
 	text-align: center;
 }
 
+.hover {
+	z-index: 1;
+}
 
-/* get my reward */
+.row {
+	display: flex;
+	justify-content: space-around;
+}
+.imgfellows {
+	width: 300px;
+	height: 350px;
+	opacity: 0.5;
+	z-index: 1;
+	}
 
-
-.reward{
+.coins {
+	width: 280px;
+	position: absolute;
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+	border-radius: 10px;
+	font-family: "Party";
+	font-size: 35px;
 	text-align: center;
+	margin-top: 30px;
+	margin-left: 10px;
+	z-index: 2;
+}
+
+.name {
+	width: 280px;
+	position: absolute;
+	font-family: "Party";
+	font-size: 35px;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 10px;
+	z-index: 2;
+	bottom: -810px;
+}
+
+.price {
+	color: #FF6600;
+}
+
+.hover:hover .imgfellows {
+	opacity: 1;
+}
+
+.hover:hover .coins {
+	display: none;
+}
+
+.hover:hover .name{
+	font-size: 25px;
+	bottom: -900px;
+	z-index: 2;
+	color: white;
 }
 
 
@@ -182,6 +234,12 @@ div#slider {
 
 
 
+
+/* get my reward */
+
+.reward{
+text-align: center;
+}
   
   /*** Table Styles **/
   
@@ -384,6 +442,18 @@ footer a {
 footer p {
 	padding: 5px 0 5px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
